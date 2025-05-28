@@ -1,0 +1,197 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fdebd3;
+}
+
+.container {
+    flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 5rem;
+    background-color: #fefcbf;
+}
+
+.fa-compass {
+    color: #8c61ff;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* FOOTR */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #fefcbf;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* CARD */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* CARD EFFECT */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: #bbd4ce;
+}
+
+/* NEW PAGE */
+.add-btn {
+    background-color: #8c61ff !important;
+    border: none !important;
+}
+
+/* EDIT PAGE */
+.edit-btn {
+    background-color: #8c61ff !important;
+}
+
+/* SHOW PAGE  */
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display:flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* EXTRA */
+img {
+    transition: transform 0.2s ease;
+}
+
+.card:hover img {
+    transform: scale(1.06);
+}
+
+/* MAP */
+#map {
+    height: 400px;
+    width: 100vh;
+}
+
+/* WEB ICONS  */
+#filters {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            color: #5f59f7;
+        }
+
+        .filter {
+            text-align: center;
+            margin-right: 1.5rem;
+            margin-top: 1.5rem;
+            opacity: 0.7;
+        }
+
+        .filter:hover {
+            opacity: 1.5;
+            cursor: pointer;
+        }
+
+        .filter p {
+            font-size: 0.8rem;
+        }
+
+        .tax-info {
+            display: none;
+        }
+
+        .tax-toggle {
+            border: 0.5px solid black;
+            border-radius: 0.5rem;
+            height: 3.25rem;
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+/* SERACH BUTTTON  */
+    .search-btn {
+        background-color: #8c61ff;
+        color: #fff;
+        border-radius: 25px;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .search-btn:hover {
+        background-color: #8c61ff;
+        color: #fff;
+    }
+
+    .search-btn i {
+        display: inline;
+        margin-right: 0.5rem;
+    }
+
+    .search-inp {
+        border-radius: 25px;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        font-size: 1rem;
+    }
+
+
+
