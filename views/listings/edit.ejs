@@ -40,14 +40,14 @@
                             <label for="price" class="form-label">Price</label><br>
                             <input name="listing[price]" value="<%= listing.price %>" type="number" class="form-control"
                                 id="price" required />
-                            <div class="invalid-feedback">Price should be valid</div>
+                            <div class="invalid-feedback">Price should be valid!</div>
                         </div>
 
                         <div class="col-md-6 mb-3">
                             <label for="country" class="form-label">Country</label>
                             <input name="listing[country]" value="<%= listing.country %>" type="text"
                                 class="form-control" id="country" required />
-                            <div class="invalid-feedback">Country name should be valid</div>
+                            <div class="invalid-feedback">Country name should be valid!</div>
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@
                         <label for="location" class="form-label">Location</label>
                         <input name="listing[location]" value="<%= listing.location %>" type="text" class="form-control"
                             required />
-                        <div class="invalid-feedback">Location should be valid</div>
+                        <div class="invalid-feedback">Location should be valid!</div>
                     </div>
                     <button class="btn btn-dark edit-btn mt-3">Edit</button>
                 </form>
