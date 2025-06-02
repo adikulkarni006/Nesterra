@@ -26,6 +26,25 @@ body{
     color: #222222 !important;
 }
 
+/* NAVBAR MEDIA QUERY */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .navbar .nav-link {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .fa-compass {
+        font-size: 1.5rem;
+    }
+}
+
 /* FOOTR */
 .f-info-links a {
     text-decoration: none;
