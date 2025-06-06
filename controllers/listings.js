@@ -13,7 +13,7 @@ module.exports.renderNewForm = (req, res) => {
     res.render("listings/new.ejs");
 };
 
-module.exports.showListing =async (req, res) => {
+module.exports.showListing = async (req, res) => {
 let { id } = req.params;
 const listing = await Listing.findById(id)
 .populate({
@@ -39,7 +39,6 @@ module.exports.createListing = async (req, res, next) => {
         })
         .send();
 
-    // Check if response has geometry
     if (
         response.body &&
         response.body.features &&
@@ -62,7 +61,6 @@ module.exports.createListing = async (req, res, next) => {
         res.redirect("/listings/new");
     }
 }; 
-
 
 module.exports.renderEditForm = async (req, res) => {
         let { id } = req.params;

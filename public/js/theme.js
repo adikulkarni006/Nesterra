@@ -1,11 +1,8 @@
-// public/js/theme.js
-
 document.addEventListener("DOMContentLoaded", function () {
 const toggleBtn = document.getElementById("theme-toggle");
 
 if (!toggleBtn) return;
 
-  // Load theme from localStorage
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme === "dark") {
     document.body.classList.add("dark-mode");

@@ -3,8 +3,8 @@ class ExpressError extends Error {
         super();
         this.statusCode = statusCode;
         this.message = message;
-         this.isOperational = true; // This helps differentiate between operational errors and programming bugs.
-    Error.captureStackTrace(this, this.constructor); //ex
+        this.isOperational = true; 
+    Error.captureStackTrace(this, this.constructor);
     }
 }
 
