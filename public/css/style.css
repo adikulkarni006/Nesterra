@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #bbd4ce;
+    background: #bbd4ce;
     color: #333;
     margin: 0;
 }
@@ -65,8 +65,8 @@ body{
 }
 
 .f-info-socials i {
-    font-size: 2.5rem;
-    margin-right: 1rem;
+    font-size: 4rem;
+    margin-right: 3.5rem;
 }
 
 .f-info {
