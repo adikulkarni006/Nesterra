@@ -3,19 +3,23 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #bbd4ce;
     color: #333;
     margin: 0;
 }
 
 .container {
     flex: 1;
+    background-color: #e3f6f5;
+}
+
+i {
+    font-size:large;
 }
 
 /* NAVBAR */
 .navbar {
     height: 5rem;
-    background-color: #fefcbf;
+    background-color: #bae8e8;
 }
 
 .fa-compass {
@@ -72,11 +76,12 @@ body{
 .f-info {
     text-align: center;
     height: 8rem;
-    background-color: #fefcbf;
+    background-color: #bae8e8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: space-evenly;
+    font-size: large;
 }
 
 /* CARD */
@@ -99,12 +104,9 @@ body{
 }
 
 .card-body {
-    padding: 0 !important
+    padding: 0 !important;
+    background-color: #fdebd3;
 }
-
-/* .card-body p {
-    color: #8c61ff;
-} */
 
 .card-text p {
     font-weight: 400 !important;
@@ -126,13 +128,13 @@ body{
 
 /* NEW PAGE */
 .add-btn {
-    background-color: #8c61ff !important;
+    background-color: #492b7c !important;
     border: none !important;
 }
 
 /* EDIT PAGE */
 .edit-btn {
-    background-color: #8c61ff !important;
+    background-color: #492b7c !important;
 }
 
 /* SHOW PAGE  */
@@ -163,12 +165,20 @@ img {
     width: 100vh;
 }
 
+@media (max-width: 768px) {
+    #map {
+        height: 250px;
+        width: 32vh;
+        border-radius: 8px;
+    }
+}
+
 /* WEB ICONS  */
 #filters {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            color: #5f59f7;
+            color: #343090;
         }
 
         .filter {
@@ -203,7 +213,7 @@ img {
 
 /* SERACH BUTTTON  */
     .search-btn {
-        background-color: #8c61ff;
+        background-color: #492b7c;
         color: #fff;
         border-radius: 25px;
         padding: 0 1rem 0 1rem;
@@ -212,7 +222,7 @@ img {
     }
 
     .search-btn:hover {
-        background-color: #8c61ff;
+        background-color: #492b7c;
         color: #fff;
     }
 
@@ -287,13 +297,9 @@ img {
     }
 
     .dark-mode {
-        background-color: #121212;
-        color: #ffffff;
-    }
-
-    .dark-mode {
         color: #ffffff !important;
-        border-color: #444 !important; 
+        border-color: #444 !important;
+        background-color: #121212; 
     }
 
     .dark-mode .card {
@@ -304,6 +310,18 @@ img {
     .dark-mode .navbar {
         background-color: #1a1a1a;
         border-bottom: 1px solid #444;
+    }
+
+    .dark-mode .f-info {
+        background-color: #1a1a1a;
+    }
+
+    .dark-mode .container {
+        background-color: #1a1a1a;
+    }
+
+    .dark-mode .card-body {
+        background-color: #1a1a1a;
     }
 
     .dark-mode a {
