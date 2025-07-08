@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Plus Jakarta Sans", sans-serif !important;
     display: flex;
@@ -13,7 +17,12 @@ body{
 }
 
 i {
-    font-size:large;
+    font-size: large;
+}
+
+
+.fa-brands.fa-cloudversify {
+    font-size: xxx-large;
 }
 
 /* NAVBAR */
@@ -31,17 +40,27 @@ i {
     color: #222222 !important;
 }
 
+
+
 /* NAVBAR MEDIA QUERY FOR MOBILE  */
 @media (max-width: 768px) {
     .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: auto;
         flex-direction: column;
         padding: 1rem;
         text-align: center;
     }
 
-    .navbar .nav-link {
-        display: block;
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar .nav-links {
         margin: 0.5rem 0;
     }
 
@@ -66,6 +85,7 @@ i {
     align-items: center;
     justify-content: center;
     font-size: larger;
+    background-color: #bae8e8;
 }
 
 .f-info-socials i {
@@ -75,21 +95,37 @@ i {
 
 .f-info {
     text-align: center;
-    height: 8rem;
+    height: auto;
+    padding: 1rem;
     background-color: #bae8e8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: space-evenly;
+    align-items: center;
     font-size: large;
+    gap: 1rem;
 }
 
 /* CARD */
+.listing-image {
+    width: 200px;
+      /* Set the desired width */
+    height: auto;
+      /* Maintain the aspect ratio */
+    max-height: 150px;
+      /* Optionally set a maximum height */
+}
+
 .listing-card {
     border: none !important;
     margin-bottom: 2rem;
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    transition: transfor .3s ease;
+    margin: 0;
+    max-width: 100%;
+    flex: 1 1 100%;
 }
 
 .listing-card:hover {
@@ -135,6 +171,7 @@ i {
 /* EDIT PAGE */
 .edit-btn {
     background-color: #492b7c !important;
+    border: none;
 }
 
 /* SHOW PAGE  */
@@ -163,12 +200,13 @@ img {
 #map {
     height: 400px;
     width: 100vh;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
     #map {
-        height: 250px;
-        width: 32vh;
+        height: 240px;
+        width: 27vh;
         border-radius: 8px;
     }
 }
@@ -178,12 +216,15 @@ img {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            /* justify-content: center;
+            gap: 1rem; */
             color: #343090;
+            overflow: hidden;
         }
 
         .filter {
             text-align: center;
-            margin-right: 1.5rem;
+            margin-left: 0.7rem;
             margin-top: 1.5rem;
             opacity: 0.7;
         }
@@ -193,8 +234,8 @@ img {
             cursor: pointer;
         }
 
-        .filter p {
-            font-size: 0.8rem;
+        .filter i {
+            font-size: 1.2rem;
         }
 
         .tax-info {
@@ -219,6 +260,7 @@ img {
         padding: 0 1rem 0 1rem;
         align-items: center;
         justify-content: center;
+        display: flex;
     }
 
     .search-btn:hover {
@@ -322,6 +364,22 @@ img {
 
     .dark-mode .card-body {
         background-color: #1a1a1a;
+    }
+
+    .dark-mode .f-info-brand {
+        background-color: #1a1a1a;
+    }
+
+    .dark-mode .f-info-links {
+        background-color: #1a1a1a;
+    }
+
+    .dark-mode .fa-brands {
+        color: #492b7c;
+    }
+
+    .dark-mode .fa-solid {
+        color: #492b7c;
     }
 
     .dark-mode a {
