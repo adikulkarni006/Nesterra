@@ -9,17 +9,24 @@ body{
     min-height: 100vh;
     color: #333;
     margin: 0;
+    padding-top: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-.container {
+.main-content {
     flex: 1;
     background-color: #e3f6f5;
+    padding: 0;
+    margin: 0 auto;
+    /* background-color: transparent; */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 i {
     font-size: large;
 }
-
 
 .fa-brands.fa-cloudversify {
     font-size: xxx-large;
@@ -28,7 +35,7 @@ i {
 /* NAVBAR */
 .navbar {
     height: 5rem;
-    background-color: #bae8e8;
+    background-color: #44c2fd;
 }
 
 .fa-compass {
@@ -85,7 +92,7 @@ i {
     align-items: center;
     justify-content: center;
     font-size: larger;
-    background-color: #bae8e8;
+    background-color: #44c2fd;
 }
 
 .f-info-socials i {
@@ -97,7 +104,7 @@ i {
     text-align: center;
     height: auto;
     padding: 1rem;
-    background-color: #bae8e8;
+    background-color: #44c2fd;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -198,9 +205,11 @@ img {
 
 /* MAP */
 #map {
-    height: 400px;
+    height: 300px;
     width: 100vh;
     width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -265,7 +274,7 @@ img {
 
     .search-btn:hover {
         background-color: #492b7c;
-        color: #fff;
+        color:  #f6f4f4;
     }
 
     .search-btn i {
@@ -307,6 +316,38 @@ img {
     .search-inp, .search-btn {
         width: 100%;
     }
+}
+
+/* LISTING  */
+.listing-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(22, 217, 235, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #060606;
+}
+
+.listing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(22, 217, 235, 0.6);
+}
+
+.listing-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.listing-info {
+    padding: 16px;
+}
+
+.listing-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #16D9EB;
 }
 
 /* LISTING MEDIA QUERY  */
@@ -358,7 +399,7 @@ img {
         background-color: #1a1a1a;
     }
 
-    .dark-mode .container {
+    .dark-mode .main-content {
         background-color: #1a1a1a;
     }
 
