@@ -2,7 +2,7 @@
 
 A feature-rich, full-stack web application that replicates core functionalities of Airbnb. Built using **Node.js**, **Express**, **MongoDB**, **EJS**, and **Mapbox**, this project allows users to explore, list, and book unique stays around the world.
 
-> 🚀 Live Demo: (https://airbnb-project-653b.onrender.com)
+> 🚀 Live Demo: (https://nesterra-by-advait.onrender.com/listings)
 
 ---
 
