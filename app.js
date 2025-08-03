@@ -102,6 +102,8 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("error.ejs", { message });
 });
 
+app.use(express.static("public"));
+
 
 app.listen(8080, () => {
   console.log("server is listening to port 8080");
